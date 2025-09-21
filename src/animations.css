@@ -1,0 +1,116 @@
+/* Custom animations for CalmSpace */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-pulse {
+  animation: pulse 4s ease-in-out infinite;
+}
+
+.animation-delay-500 {
+  animation-delay: 0.5s;
+}
+
+.animation-delay-1000 {
+  animation-delay: 1s;
+}
+
+.animation-delay-1500 {
+  animation-delay: 1.5s;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+/* Professional-themed decorative elements */
+.professional-bg::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 64px;
+  height: 64px;
+  color: rgba(147, 51, 234, 0.2);
+  animation: float 6s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.professional-bg::after {
+  content: '\f0f0'; /* fas fa-user-md */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 64px;
+  height: 64px;
+  color: rgba(147, 51, 234, 0.2);
+  animation: float 6s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 1;
+  font-size: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Additional background elements */
+.bg-gradient-orb-1 {
+  position: absolute;
+  top: -80px;
+  left: -80px;
+  width: 160px;
+  height: 160px;
+  background: linear-gradient(135deg, rgba(147, 51, 234, 0.1), rgba(59, 130, 246, 0.1));
+  border-radius: 50%;
+  filter: blur(48px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.bg-gradient-orb-2 {
+  position: absolute;
+  bottom: -80px;
+  right: -80px;
+  width: 160px;
+  height: 160px;
+  background: linear-gradient(135deg, rgba(34, 197, 94, 0.1), rgba(147, 51, 234, 0.1));
+  border-radius: 50%;
+  filter: blur(48px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.bg-gradient-orb-3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 240px;
+  height: 240px;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.05), rgba(147, 51, 234, 0.05));
+  border-radius: 50%;
+  filter: blur(48px);
+  pointer-events: none;
+  z-index: 0;
+}
