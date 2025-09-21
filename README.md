@@ -133,3 +133,9 @@ This project is licensed under the MIT License. See the LICENSE file for more de
 ## 🙏 Acknowledgements
 -   *Avatars:* User avatars are generated using the wonderful [DiceBear API](https://www.dicebear.com/).
 -   *Images:* Background and resource images are from [Unsplash](https://unsplash.com/).
+
+
+https://github.com/user-attachments/assets/a95b94c8-1c37-4f70-b48c-4e7ba7fc126d
+
+
+
